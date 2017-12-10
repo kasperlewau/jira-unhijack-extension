@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "JIRA Un-hijack",
+	"version": "1.0",
+	"description": "Un-hijacks Firefox tab navigation keys from Atlassian software (primarily, JIRA)",
+	"icons": {
+		"48": "48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.atlassian.net/*"],
+			"js": ["unhijack.js"]
+		}
+	]
+}
